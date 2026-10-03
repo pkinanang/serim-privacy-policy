@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Serim Local Peer-to-Peer File Transfer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Official Privacy Policy for Serim - Cross-platform local QR-based peer-to-peer file transfer app. 100% offline, zero cloud servers, zero tracking.">
+  <meta name="keywords"
+    content="Serim, Privacy Policy, Local File Transfer, P2P, Peer to Peer, QR Code Sharing, Data Protection, Offline File Transfer">
+  <meta name="author" content="Serim Development Team">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Serim Privacy Policy - 100% Offline P2P Sharing">
+  <meta property="og:description"
+    content="Read how Serim protects your data with local network transfers, zero central servers, and privacy by design.">
+  <meta property="og:image" content="./assets/serim_privacy_shield.jpg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon / Icon -->
+  <link rel="icon" type="image/jpg" href="./assets/serim_privacy_shield.jpg">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-wrapper" id="brandLink">
+        <div class="brand-icon-wrapper">
+          <img src="./assets/serim_privacy_shield.jpg" alt="Serim Shield Icon">
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-title">Serim</span>
+          <span class="brand-subtitle">Privacy & Data Security</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <!-- Live Search Input -->
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search privacy topics..."
+            aria-label="Search privacy topics">
+        </div>
+
+        <!-- Theme Toggle -->
+        <button class="btn-icon" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle theme">
+          <svg id="themeIcon" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor"
+              d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
+          </svg>
+        </button>
+
+        <!-- Print PDF Button -->
+        <button class="btn-outline" onclick="triggerPrint()" title="Print or Save PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          Print PDF
+        </button>
+
+        <!-- Contact Button -->
+        <button class="btn-primary" data-open-modal id="openContactBtn">
+          Contact Privacy Team
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge-group">
+          <span class="hero-badge">
+            <span class="badge-dot"></span>
+            Version 1.0.0 • Offline P2P Core
+          </span>
+          <span class="hero-badge"
+            style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.3);">
+            🔒 Zero Cloud Storage
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Privacy Policy for <span>Serim</span>
+        </h1>
+
+        <p class="hero-description">
+          Serim is engineered from the ground up to keep your data exclusively yours. As a local peer-to-peer file
+          transfer engine, your files move directly between your phones and laptops over your Wi-Fi or mobile hotspot —
+          completely bypassing cloud servers.
+        </p>
+
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            📅 <span>Effective Date: <strong>October 3, 2026</strong></span>
+          </div>
+          <div class="hero-meta-item">
+            🛡️ <span>Architecture: <strong>Peer-to-Peer (Local Network Only)</strong></span>
+          </div>
+          <div class="hero-meta-item">
+            🌐 <span>Data Collection: <strong>Zero Telemetry / Zero Trackers</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-card">
+          <img src="./assets/serim_privacy_shield.jpg" alt="Serim Privacy & Security Shield">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Highlights Section -->
+  <section class="highlights-section">
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-icon">⚡</div>
+        <h3 class="highlight-title">100% Local Peer-to-Peer</h3>
+        <p class="highlight-desc">Transfers operate via local HTTP & WebSockets. Files never leave your local wireless
+          network or upload to remote cloud storage.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">📷</div>
+        <h3 class="highlight-title">Camera for QR Auth Only</h3>
+        <p class="highlight-desc">Camera access is used strictly to scan temporary QR pairing codes. No photos or video
+          frames are ever recorded or stored.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">📁</div>
+        <h3 class="highlight-title">Local Device Storage</h3>
+        <p class="highlight-desc">Files received are saved directly into your designated device download directory.
+          Transfer history is kept in local SQLite on device.</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon">🛡️</div>
+        <h3 class="highlight-title">Zero Analytics & Ad Trackers</h3>
+        <p class="highlight-desc">We do not track usage, build user profiles, sell personal data, or bundle third-party
+          advertising SDKs inside Serim.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Layout -->
+  <main class="main-layout">
+
+    <!-- Sticky Table of Contents Sidebar -->
+    <aside class="toc-sidebar" aria-label="Table of Contents">
+      <div class="toc-header">
+        <span class="toc-title">Navigation</span>
+      </div>
+      <ul class="toc-list">
+        <li class="toc-item"><a href="#intro" class="active"><span class="num-badge">01</span> Introduction & Scope</a>
+        </li>
+        <li class="toc-item"><a href="#no-collection"><span class="num-badge">02</span> What We Never Collect</a></li>
+        <li class="toc-item"><a href="#local-data"><span class="num-badge">03</span> Information Processed Locally</a>
+        </li>
+        <li class="toc-item"><a href="#device-permissions"><span class="num-badge">04</span> Device Permissions
+            Breakdown</a></li>
+        <li class="toc-item"><a href="#security"><span class="num-badge">05</span> Security & Authentication</a></li>
+        <li class="toc-item"><a href="#retention"><span class="num-badge">06</span> Data Storage & Retention</a></li>
+        <li class="toc-item"><a href="#dependencies"><span class="num-badge">07</span> Open Source Audit</a></li>
+        <li class="toc-item"><a href="#user-rights"><span class="num-badge">08</span> Your Rights & Controls</a></li>
+        <li class="toc-item"><a href="#children"><span class="num-badge">09</span> Children's Privacy</a></li>
+        <li class="toc-item"><a href="#changes"><span class="num-badge">10</span> Policy Updates</a></li>
+        <li class="toc-item"><a href="#contact"><span class="num-badge">11</span> Contact & Inquiry</a></li>
+      </ul>
+    </aside>
+
+    <!-- Detailed Policy Sections Column -->
+    <div class="content-column">
+
+      <!-- Section 1 -->
+      <section class="policy-section" id="intro">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">Introduction & Scope</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Welcome to the <strong>Serim Privacy Policy</strong>. Serim ("we", "our", or "the Application") is a
+            cross-platform local peer-to-peer (P2P) file sharing solution designed for mobile devices (Android, iOS) and
+            desktop operating systems (macOS, Windows, Linux).
+          </p>
+          <p>
+            This Privacy Policy explains how information is handled when you use Serim to share files between devices
+            (e.g., Phone ↔ Phone, Phone ↔ Laptop, Laptop ↔ Laptop). Our core design philosophy is <strong>Privacy by
+              Default</strong>: all server logic runs locally on your own hardware via embedded Dart HTTP/WebSocket
+            servers.
+          </p>
+          <div class="callout info">
+            <span class="callout-icon">💡</span>
+            <div class="callout-content">
+              <strong>Core Guarantee:</strong> Serim does not maintain cloud servers to relay, buffer, or analyze your
+              files. When you transfer a file, data streams directly over your local Wi-Fi router or personal mobile
+              hotspot.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="policy-section" id="no-collection">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Information We Never Collect</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Unlike traditional cloud storage or sharing services, Serim operates without accounts, central databases, or
+            remote telemetry. We explicitly do <strong>NOT</strong> collect, store, or transmit:
+          </p>
+          <ul>
+            <li><strong>Personal Identity:</strong> Your real name, email address, phone number, or social media logins.
+            </li>
+            <li><strong>File Contents:</strong> The names, documents, photos, videos, or raw bytes you transfer remain
+              private between pairing devices.</li>
+            <li><strong>Location Data:</strong> GPS coordinates, precise geographical location, or cell tower location
+              identifiers.</li>
+            <li><strong>Analytics & Behavioral Telemetry:</strong> How often you open Serim, how many files you send, or
+              session duration.</li>
+            <li><strong>Advertising Identifiers:</strong> IDFA, AAID, or custom advertising tokens.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="policy-section" id="local-data">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Information Processed Locally</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            To establish local device discovery and facilitate high-speed transfers, Serim temporarily processes certain
+            technical metadata in memory (RAM) and on-device storage:
+          </p>
+          <ol>
+            <li><strong>Local Network Address:</strong> Your device's internal IP address (e.g.,
+              <code>192.168.1.45</code>) and assigned port for the local Dart HTTP server.</li>
+            <li><strong>Device Alias:</strong> A user-editable device name (e.g., "Peter's MacBook Pro") transmitted to
+              paired devices during connection.</li>
+            <li><strong>Temporary Pairing Tokens:</strong> Cryptographically generated SHA-256 tokens embedded inside
+              the QR code to authenticate connection handshakes.</li>
+            <li><strong>Transfer Logs:</strong> A local SQLite history database storing file names, file sizes,
+              timestamps, and transfer completion status on your device.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="policy-section" id="device-permissions">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Device Permissions Breakdown</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Serim requests minimal OS permissions necessary to perform local transfers and QR code scanning. Here is
+            full transparency on how each permission is used:
+          </p>
+
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Permission</th>
+                  <th>Underlying Package</th>
+                  <th>Purpose</th>
+                  <th>Data Destination</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Camera Access</strong></td>
+                  <td><code>mobile_scanner</code></td>
+                  <td>Scans the QR code shown on the sender/receiver device screen for pairing.</td>
+                  <td><span class="status-tag tag-local">Local RAM Only</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Local Network / Wi-Fi</strong></td>
+                  <td><code>network_info_plus</code></td>
+                  <td>Retrieves local Wi-Fi SSID & local IP to start the embedded HTTP server.</td>
+                  <td><span class="status-tag tag-local">Local Device</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Storage & Downloads</strong></td>
+                  <td><code>file_picker</code>, <code>path_provider</code></td>
+                  <td>Allows selecting files to send and saving incoming files to your filesystem.</td>
+                  <td><span class="status-tag tag-local">Local Disk</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Device Info</strong></td>
+                  <td><code>device_info_plus</code></td>
+                  <td>Generates a device model alias so nearby peers can identify your device.</td>
+                  <td><span class="status-tag tag-local">Shared with Peer</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="policy-section" id="security">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 class="section-title">Security & Authentication Standards</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Unauthorized devices on your local network cannot access your files. Serim implements robust security
+            controls:
+          </p>
+          <ul>
+            <li><strong>QR Authentication Handshake:</strong> Device A displays a unique QR code containing a temporary
+              session token and connection URL. Device B must physically scan the QR code to authenticate.</li>
+            <li><strong>SHA-256 Token Validation:</strong> Every incoming HTTP request and WebSocket frame is validated
+              against the pairing token generated during session creation.</li>
+            <li><strong>Local Firewall Binding:</strong> Embedded servers bind specifically to the active Wi-Fi /
+              Hotspot interface and do not expose ports to public WAN interfaces.</li>
+          </ul>
+          <div class="callout security">
+            <span class="callout-icon">🛡️</span>
+            <div class="callout-content">
+              <strong>End-to-End Local Direct Transfer:</strong> File transfers use direct TCP streams between devices
+              without intermediary proxy nodes.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="policy-section" id="retention">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2 class="section-title">Data Storage & Retention</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            All transfer logs, device settings, and preference flags are stored locally on your device using
+            <code>sqflite</code> and <code>shared_preferences</code>.
+          </p>
+          <p>
+            You retain 100% control over this data. You can clear your transfer history at any time by navigating to
+            <em>Serim Settings → Storage → Clear Transfer History</em> or by uninstalling the application. Uninstalling
+            Serim completely removes all stored database records.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="policy-section" id="dependencies">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <h2 class="section-title">Open Source & Third-Party Audit</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Serim is built with trusted, open-source packages audited for privacy compliance. We do not include binary
+            analytics or closed-source tracking SDKs.
+          </p>
+
+          <div class="code-block">
+            dependencies:
+            flutter_riverpod: ^3.3.2 # State Management (Local)
+            mobile_scanner: ^7.4.2 # On-Device Camera QR Scanner
+            qr_flutter: ^4.1.0 # Offline QR Renderer
+            sqflite: ^2.4.2 # Local SQLite Database
+            device_info_plus: ^13.2.0 # OS Device Model Identification
+            network_info_plus: ^8.2.1 # Local Wi-Fi Info
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="policy-section" id="user-rights">
+        <div class="section-header">
+          <span class="section-number">08</span>
+          <h2 class="section-title">Your Rights & Controls</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Under global privacy regulations (including GDPR, CCPA, and APPs), you have the right to access, restrict,
+            and delete your personal data. Because Serim does not retain your data on external servers:
+          </p>
+          <ul>
+            <li><strong>Right to Erasure:</strong> You can delete all data instantly by clearing Serim's app cache or
+              removing the app.</li>
+            <li><strong>Right to Portability:</strong> All files received through Serim exist directly in standard user
+              directories (e.g., Downloads folder) accessible by your file manager.</li>
+            <li><strong>Revoking Permissions:</strong> You can revoke Camera or Network permissions anytime in your
+              mobile/desktop system settings.</li>
+          </ul>
+
+          <!-- Interactive Privacy Settings Controls Box -->
+          <div class="interactive-panel">
+            <div class="panel-header">
+              <span class="panel-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                Local Privacy Simulator & Preferences
+              </span>
+            </div>
+            <div class="toggle-group">
+              <div class="toggle-item">
+                <div class="toggle-label">
+                  <span class="toggle-name">Auto-Purge Transfer History (24 Hours)</span>
+                  <span class="toggle-sub">Automatically wipe SQLite transfer logs after 24 hours</span>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="simHistoryClear">
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="toggle-item">
+                <div class="toggle-label">
+                  <span class="toggle-name">Anonymous Device Alias</span>
+                  <span class="toggle-sub">Replace device model name with randomized cryptographic hash</span>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="simAliasRandom">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div id="simStatus"
+              style="margin-top: 14px; font-size: 0.85rem; color: var(--text-secondary); font-weight: 500;">
+              • Standard local history persistence active
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9 -->
+      <section class="policy-section" id="children">
+        <div class="section-header">
+          <span class="section-number">09</span>
+          <h2 class="section-title">Children's Privacy</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            Serim does not target or collect personal information from children under the age of 13 (or under 16 in the
+            European Union). Because no personal data is collected or transmitted to remote servers, Serim is compliant
+            with the Children's Online Privacy Protection Act (COPPA).
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 10 -->
+      <section class="policy-section" id="changes">
+        <div class="section-header">
+          <span class="section-number">10</span>
+          <h2 class="section-title">Changes to This Privacy Policy</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            We may update this Privacy Policy from time to time to reflect changes in our app architecture or legal
+            requirements. Any modifications will be posted on this page with an updated "Effective Date". We encourage
+            you to review this policy periodically.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 11 -->
+      <section class="policy-section" id="contact">
+        <div class="section-header">
+          <span class="section-number">11</span>
+          <h2 class="section-title">Contact & Data Privacy Inquiry</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            If you have questions, feedback, or data privacy inquiries regarding Serim, please reach out to our privacy
+            engineering team:
+          </p>
+          <div class="callout info">
+            <span class="callout-icon">✉️</span>
+            <div class="callout-content">
+              <strong>Privacy Contact Email:</strong> <a href="mailto:support@elbensoftware.com"
+                style="color: var(--accent-cyan);">support@elbensoftware.com</a><br>
+              <strong>Developer Repository:</strong> Serim Open Source Project
+            </div>
+          </div>
+          <button class="btn-primary" data-open-modal style="align-self: flex-start; margin-top: 10px;">
+            Submit Data Privacy Inquiry
+          </button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Interactive Contact Drawer Modal -->
+  <div class="modal-overlay" id="contactModal" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <button class="modal-close" data-close-modal aria-label="Close modal">&times;</button>
+      <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary);">
+        Contact Privacy Officer
+      </h3>
+      <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 20px;">
+        Have questions about Serim's local peer-to-peer security model? Send a direct enquiry to our team.
+      </p>
+
+      <form id="privacyForm">
+        <div class="form-group">
+          <label class="form-label" for="userEmail">Your Email Address</label>
+          <input type="email" id="userEmail" class="form-input" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inquiryType">Inquiry Type</label>
+          <select id="inquiryType" class="form-input">
+            <option value="security">Security & Encryption Verification</option>
+            <option value="permissions">Device Permission Inquiry</option>
+            <option value="gdpr">GDPR / Data Control Request</option>
+            <option value="general">General Question</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="userMessage">Message / Enquiry Details</label>
+          <textarea id="userMessage" class="form-textarea" rows="4"
+            placeholder="How can we assist you with Serim's privacy features?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;">
+          Submit Enquiry
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-text">
+        © 2026 <strong>Serim P2P File Transfer</strong>. All rights reserved. 100% Offline Local Architecture.
+      </div>
+      <div class="footer-links">
+        <a href="#intro" class="footer-link">Privacy Policy</a>
+        <a href="#device-permissions" class="footer-link">Permissions Matrix</a>
+        <a href="#security" class="footer-link">Security Specs</a>
+        <a href="#" class="footer-link" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to Top
+          ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
